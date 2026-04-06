@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My html projects</title>
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #0d0d0d;
+    color: white;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: black;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* LOGO */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 60px;
+    border-radius: 8px;
+}
+
+.logo span {
+    color: #d4af37;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* NAV */
+nav a {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #d4af37;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* HERO */
+.hero {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(to right, #000, #1a1a1a);
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    color: #d4af37;
+}
+
+.hero p {
+    margin: 15px 0;
+}
+
+/* BUTTON */
+.btn {
+    background: #d4af37;
+    color: black;
+    padding: 10px 20px;
+    border: color orange, 6px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.945);
+    transform: scale(1.05);
+}
+
+/* SECTIONS */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #d4af37;
+    margin-bottom: 20px;
+}
+
+/* CARDS */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background: black;
+    padding: 20px;
+    margin: 10px;
+    width: 250px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background: #111;
+}
+
+
+/* CONTACT */
+input, textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+}
+
+/* FOOTER */
+footer {
+    background: black;
+    padding: 15px;
+}
+
+/* ANIMATION */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <a href="../KamogeloPienaarPortfolio.html">Home</a>
+        <a href="#">Music Harmony Web Page</a>
+        
+    </nav>
+</header>
+
+<body>
+        <h2>Music Harmony web page</h2>
+            <img src="Page1.jpg" alt="Page one">
+            <img src="Page2.jpg" alt="page two">
+            <img src="Page3.jpg" alt="page three">
+            <style>
+                img{
+                    width: 350px;
+                    border: 350px;
+
+                }
+
+            </style>
+<h1>README.MD</h1>
+
+    <h2>Harmony Heights Band Website</h2>
+
+<h3>Author</h3>
+<br>
+
+<p>Kamogelo Pienaar</p>
+<br>
+<p>Project Description</p>
+<br>
+<p>This project is a multi-page band website created as part of a web development exercise.
+The website represents a fictional band called Harmony Heights and demonstrates the use of HTML, CSS, and JavaScript to create a simple interactive website.</p>
+<br>
+<p>The site includes multiple pages, multimedia content, and a basic contact form to simulate a real band website.</p>
+<br>
+
+
+<h3>Technologies Used</h3>
+<ul>
+    <li>HTML5</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <li>SPCK Editor (Mobile Code Editor)</li>
+    <li>GitHub (Project Hosting and Version Control)</li>
+</ul>
+<br>
+
+<h3>Website Features</h3>
+<br>
+<p>Home Page</p>
+<br>
+<p>The home page introduces the band and displays images of band members.</p>
+<br>
+<h3>Features:</h3>
+<ul>
+<li>Band description</li>
+<li>Band member images</li>
+<li>Navigation menu</li>
+</ul>
+<br>
+
+<h3>Music Page</h3>
+<br>
+<p>The music page allows visitors to experience the band's content.</p>
+<br>
+<h3>Features:</h3>
+<ul>
+
+<li>Audio player</li>
+<li>Video performance</li>
+<li>Multimedia embedding</li>
+</ul>
+<br>
+
+<h3>Contact Page</h3>
+<br>
+<p>The contact page allows visitors to interact with the band.</p>
+<br>
+<h3>Features:</h3>
+<ul>
+<li>Tour dates list</li>
+<li>Social media links</li>
+<li>Contact form</li>
+</ul>
+<br>
+
+<h3>Project Structure</h3>
+<br>
+<p>MusicalBand</p>
+<ol>
+    <li>index.html</li>
+    <li>music.html</li>
+    <li>contact.html</li>
+    <li>style.css</li>
+    <li>main.js</li>
+    <li>README.md</li>
+ </ol>   
+<br>
+
+
+<h3>Learning Objectives</h3>
+<br>
+<p>This project demonstrates understanding of:<p>
+<ul>
+<li>HTML page structure</li>
+<li>Multi-page website navigation</li>
+<li>CSS styling</li>
+<li>JavaScript file linking</li>
+<li>Embedding audio and video</li>
+<li>Creating forms</li>
+<li>Organizing web project files</li>
+</ul>
+<br>
+<h3>How to Run the Project</h3>
+<ol>
+<li>Download or clone the repository.</li>
+<li>Open the project folder.</li>
+<li>Open index.html in any web browser.</li>
+<li>Navigate through the website using the menu links</li>
+<ol>
+<br>
+<h3>Future Improvements</h3>
+<br>
+<h3>Possible improvements include:</h3>
+<ul>
+<li>Responsive design for mobile devices</li>
+<li>Improved styling and layout</li>
+<li>More interactive JavaScript features</li>
+<li>Hosting the website using GitHub Pages<li>
+</ul>
+<br>
+
+<p>License<p>
+
+<p>This project was created for educational purposes.</p>
+
+    
+</body>
+</html>
